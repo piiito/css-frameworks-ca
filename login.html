@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4eeada3bf1.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="/dist/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,47 +48,27 @@
           </nav>
     </header>
     <main>
-        <h1>New Updates</h1>
-        <div class="card-group">
-            <div class="card">
-              <img src="src/scss/img/boy-s-silhouette-sunset.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h2 class="card-title">Martha Andersen</h2>
-                <p class="card-text">Just enjoying this weather!.</p>
-                <p class="card-text"><small class="text-muted">Posted 5 mins ago</small></p>
-              </div>
+        <section  class="log-in">
+            <img src="src/scss/img/user.png" class="login-image">
+            <form action="/profile.html">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <div class="card">
-              <img src="src/scss/img/proposal-romantic-place.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h2 class="card-title">Peter Dal</h2>
-                <p class="card-text">Guess who popped the question!</p>
-                <p class="card-text"><small class="text-muted">Posted 18 mins ago</small></p>
-              </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-            <div class="card">
-              <img src="src/scss/img/man-looking-out-window.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h2 class="card-title">Gael Martinez</h2>
-                <p class="card-text">I don't like Mondays..</p>
-                <p class="card-text"><small class="text-muted">Posted 41 mins ago</small></p>
-              </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember me</label>
             </div>
-          </div>
-    <form action="submit.php" method="POST">
-    <h3>Make a post</h3>
-     <div class="mb-3">
-        <label for="formFile" class="form-label">Choose your image</label>
-        <input class="form-control" type="file" id="formFile">
-     </div>
-     <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-        <label for="floatingTextarea2">Add caption</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Publish</button>
-    </form>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-     </main>
+            <button type="submit" class="btn btn-primary">Log in</button>
+          </form>
+        </section>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </main>
     <footer>
         <section class="company">
         <h6>lolli</h6>
@@ -100,5 +81,6 @@
         <p>+1 617 799 8888</p>
         </section>
     </footer>
+    
 </body>
 </html>

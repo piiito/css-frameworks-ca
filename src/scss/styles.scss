@@ -8,109 +8,20 @@
 $grey-text: #757473;
 $purple-action: #868dff;
 
-.btn-primary{
-    background-color: $purple-action;
-    color: $primary;
-    margin-top: 0.8rem;
-}
-
-main{
-    padding: 10% 20% 50%;
-    background: rgb(228,212,250);
-    background: linear-gradient(145deg, rgba(228,212,250,1) 0%, rgba(197,164,242,1) 50%, rgba(134,141,255,1) 100%); 
-   
-}
+@import "./button.scss";
+@import "./card.scss";
+@import "./form.scss";
+@import "./footer.scss";
+@import "./h1-h5.scss";
+@import "./main.scss";
+@import "./nav.scss";
+@import "./profile.scss";
 
 
-.navbar-brand{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-    color: $grey-text;
-}
-
-.round{
-    border-radius: 100%;
-}
-
-.text-center h1{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  }
-
-.text-center{
-    padding: 1rem 0 0.5rem;
-    background: $primary;
-    border-radius: 0.375;
-}
-
-.log-in form{
-    background: none;
-}
-.text-center p{
-    margin: 1rem;
-}
 
 
-.list-group{
-    width: 40%;
-    margin: 1rem 1rem 1rem 0;
-    background-color: $primary;
-    padding:1rem;
-}
 
-h1 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    text-align: center;
-}
 
-h2, h3{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.2rem;
-}
 
-h5, .card h2{
-    font-size: 1rem;
-}
 
-.card-group{
-    gap: 1rem;
-    margin: 1rem 0;
-}
 
-a{
-    text-decoration: none;
-    color: black;
-}
-
-form{
-    background-color: $primary;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 0.375rem
-}
-
-.profile-flex form{
-    width: 60%;
-}
-
-.form-control, header, .list-group-item, .card{
-    background: $primary;
-}
-
-footer{
-    width: 100%;
-    background-color:#868dff;
-    min-height: 100%;
-    color: $primary;
-}
-
-footer h6{
-
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.2rem;
-    padding: 2rem 1rem 0.1rem;;
-}
-
-footer p{
-padding: 0 0 0 1rem;
-}

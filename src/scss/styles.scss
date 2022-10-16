@@ -51,9 +51,6 @@ main{
 }
 
 
-
-
-
 .list-group{
     width: 40%;
     margin: 1rem 1rem 1rem 0;
@@ -61,8 +58,9 @@ main{
     padding:1rem;
 }
 
-.profile-flex{
-    display: flex;
+h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center;
 }
 
 h2, h3{
@@ -77,6 +75,11 @@ h5, .card h2{
 .card-group{
     gap: 1rem;
     margin: 1rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 form{
@@ -99,7 +102,6 @@ footer{
     background-color:#868dff;
     min-height: 100%;
     color: $primary;
-    display: grid;
 }
 
 footer h6{
@@ -111,30 +113,4 @@ footer h6{
 
 footer p{
 padding: 0 0 0 1rem;
-}
-
-.company{
-    grid-column: 1;
-    padding: 1rem;
-}
-
-.contact{
-    grid-column: 2;
-    padding: 1rem;
-}
-
-.login-image, .round{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-
-
-@media only screen and (max-width: 768px){
-
-    main{
-        padding: 5% 5% 10%;
-    }
 }

@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4eeada3bf1.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>lolli | Register</title>
     <link rel="stylesheet" href="/dist/css/styles.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="javascript/main.mjs" defer type="module" ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
@@ -22,52 +24,42 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="/profile.html">Profile</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Following</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Post
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">New Post</a></li>
-                      <li><a class="dropdown-item" href="#">Draft</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">All Posts</a></li>
-                    </ul>
+                    <a class="nav-link" href="/index.html">Log in</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
               </div>
             </div>
           </nav>
     </header>
     <main>
-        <section  class="log-in">
-            <img src="src/scss/img/user.png" class="login-image">
-            <form action="/profile.html">
+        <section class="registration">
+            <h1>Register</h1>
+            <form id="registrationForm" method="post" action="">
+             <div class="mb-3">
+              <label for="exampleInputEmail1"  class="form-label">Username</label>
+              <input type="text" name="name" required pattern="^[\w]+$" title="Username can only contain lower and uppercase letters, numbers and underscore"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="" class="form-text"></div>
+            </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputEmail1"  class="form-label">Email address</label>
+              <input type="email" name="email" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Please enter your (stud)@noroff email adress"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
+            <div class="mb-3" hidden>
+                <label for="" class="form-label">Banner image URL</label>
+                <input class="form-control" name="banner" value="https://image.host/default.png" id="">
+             </div>
+             <div class="mb-3" hidden>
+                <label for="" class="form-label">Avatar image URL</label>
+                <input class="form-control" value="https://image.host/default.png" name="avatar" id="">
+             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" name="password" required minlength="8" class="form-control" id="exampleInputPassword1">
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Log in</button>
+            <button type="submit" class="btn btn-primary">Register</button>
           </form>
         </section>
-      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </main>
     <footer>
         <section class="company">

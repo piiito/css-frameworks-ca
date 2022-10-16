@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4eeada3bf1.js" crossorigin="anonymous"></script>
-    <title>lolli | Log in</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/dist/css/styles.css">
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"> defer</script>
-    <script src="/javascript/main.mjs" defer type="module"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="javascript/main.mjs" defer type="module" ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
@@ -52,24 +51,25 @@
           </nav>
     </header>
     <main>
-        <section class="log-in">
-            <h1>Log in</h1>
-            <form id="loginForm" method="" action="">
-            <div class="mb-3">
-              <label for="exampleInputEmail1"  class="form-label">Email address</label>
-              <input type="email" name="email" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Please enter your (stud)@noroff email adress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" name="password" required minlength="8" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="register-account-link">
-              <a href="register.html">Don't have an account? Register here</a>
-            </div>
-            <button type="submit" class="btn btn-primary">Log in</button>
-          </form>
-        </section>
+    <h1>Create post</h1>
+    <form action="" method="" id="create-post-form">
+       <h2>Make a post</h2>
+      <div class="mb-3">
+        <div class="form-floating">
+          <input class="form-control" name="title" placeholder="Add a title" id="floatingTextarea2"></input>
+          <label for="floatingTextarea2">Add a title</label>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" name="body" placeholder="Write your post here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Write your post here</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" for="floatingTextarea2" name="media" placeholder="Post image URL" value="" id="">
+          <label for="floatingTextarea2">Post image URL</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Publish</button>
+    </form>
     </main>
     <footer>
         <section class="company">
@@ -83,6 +83,5 @@
         <p>+1 617 799 8888</p>
         </section>
     </footer>
-    
 </body>
 </html>

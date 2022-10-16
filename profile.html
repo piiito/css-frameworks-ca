@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="/javascript/main.mjs" defer type="module"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
 </head>
@@ -31,11 +33,13 @@
                       Post
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">New Post</a></li>
-                      <li><a class="dropdown-item" href="#">Draft</a></li>
+                      <li><a class="dropdown-item" href="/createpost.html">New Post</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">All Posts</a></li>
+                      <li><a class="dropdown-item" href="/posts.html">All Posts</a></li>
                     </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Log in</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -172,14 +176,13 @@
                 </div>
               </div>
           </div>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </main>
     <footer>
-        <section class="company">
+        <section class="company col-md-4">
         <h6>lolli</h6>
         <p>Stay connected with everyone you love</p>
         </section>
-        <section class="contact">
+        <section class="contact col-md-4">
         <h6>Contact us</h6>
         <p>Boston, MA 02108, US</p>
         <p>contact@lolli.com</p>

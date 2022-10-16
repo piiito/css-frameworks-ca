@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4eeada3bf1.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="/dist/css/styles.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="javascript/main.mjs" defer type="module" ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
@@ -32,11 +33,13 @@
                       Post
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">New Post</a></li>
-                      <li><a class="dropdown-item" href="#">Draft</a></li>
+                      <li><a class="dropdown-item" href="/createpost.html">New Post</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">All Posts</a></li>
+                      <li><a class="dropdown-item" href="/posts.html">All Posts</a></li>
                     </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Log in</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -48,26 +51,25 @@
           </nav>
     </header>
     <main>
-        <section  class="log-in">
-            <img src="src/scss/img/user.png" class="login-image">
-            <form action="/profile.html">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Log in</button>
-          </form>
-        </section>
-      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <h1>Update post</h1>
+    <form action="" method="" id="update-post-form">
+       <h2>Update post</h2>
+      <div class="mb-3">
+        <div class="form-floating">
+          <input class="form-control" name="title" placeholder="Update title" id="floatingTextarea2"></input>
+          <label for="floatingTextarea2">Update title</label>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" name="body" placeholder="Update your post here" id="floatingTextarea2" ></textarea>
+          <label for="floatingTextarea2">Update your post here</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" name="media" placeholder="Post image URL" value="https://image.host/default.png" id="">
+          <label for="" class="form-label">Post image URL</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
     </main>
     <footer>
         <section class="company">
@@ -81,6 +83,5 @@
         <p>+1 617 799 8888</p>
         </section>
     </footer>
-    
 </body>
 </html>

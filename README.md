@@ -32,3 +32,8 @@ Submission for this project will follow the pattern used in professional develop
 - Discuss and implement the feedback gathered from peer review
 - Share this Pull Request with a teacher for their approval
 - Complete the approved Pull Request, or implement the required changes
+
+
+### Project plan in Trello
+
+https://trello.com/invite/b/NtZQCH0j/ATTI4947a05b2d515ed2106d3aa1bfdc2622EA985506/javascript-2
